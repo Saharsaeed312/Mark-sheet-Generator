@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marksheet Generator with Onclick</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Marksheet Generator</h1>
+
+    <div class="marksheet-container">
+        <div class="input-group">
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" required>
+        </div>
+
+        <div class="input-group">
+            <P>ENTER YOUR OBTAINED MARKS</P>
+            <label for="subject1">English:</label>
+            <input type="number" id="subject1" placeholder="Enter marks" required>
+        </div>
+
+        <div class="input-group">
+            <label for="subject2">Urdu:</label>
+            <input type="number" id="subject2" placeholder="Enter marks" required>
+        </div>
+
+        <div class="input-group">
+            <label for="subject3">Islamiat:</label>
+            <input type="number" id="subject3" placeholder="Enter marks" required>
+        </div>
+
+        <div class="input-group">
+            <label for="subject4">Pak Studies:</label>
+            <input type="number" id="subject4" placeholder="Enter marks" required>
+        </div>
+
+        <div class="input-group">
+            <label for="subject5">Biology:</label>
+            <input type="number" id="subject5" placeholder="Enter marks" required>
+        </div>
+
+        <button type="button" onclick="generateMarksheet()">Generate Marksheet</button>
+
+        <div id="result" class="result">
+            <!-- Result will be displayed here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
